@@ -6,12 +6,14 @@ import { HooksComponent } from '../components/hookscomponent/hooks.component';
 import { DeportesComponent } from '../components/deportescomponent/deportes.component';
 import { FormsModule } from '@angular/forms';
 import { FormsBindingComponent } from '../components/formsbindingcomponent/forms.binding.component';
+import { SumarNumerosComponent } from '../components/sumarnumeroscomponent/sumar.numeros.component';
 @NgModule({
   declarations: [
     App, PrimerComponent
     , HooksComponent
     , DeportesComponent
     , FormsBindingComponent
+    , SumarNumerosComponent
   ],
   imports: [
     BrowserModule, FormsModule
