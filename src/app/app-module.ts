@@ -7,20 +7,8 @@ import { DeportesComponent } from '../components/deportescomponent/deportes.comp
 import { FormsModule } from '@angular/forms';
 import { FormsBindingComponent } from '../components/formsbindingcomponent/forms.binding.component';
 import { SumarNumerosComponent } from '../components/sumarnumeroscomponent/sumar.numeros.component';
-<<<<<<< HEAD
-import { Prueba } from './components/prueba/prueba';
-import { PruebaComponent } from './components/prueba-component/prueba-component';
-@NgModule({
-  declarations: [
-    App,
-    PrimerComponent,
-    HooksComponent,
-    DeportesComponent,
-    FormsBindingComponent,
-    SumarNumerosComponent,
-    Prueba,
-    PruebaComponent,
-=======
+import { TablaMultiplicarComponent } from '../components/tabla-multiplicar-component/tabla-multiplicar-component';
+
 @NgModule({
   declarations: [
     App, PrimerComponent
@@ -28,10 +16,16 @@ import { PruebaComponent } from './components/prueba-component/prueba-component'
     , DeportesComponent
     , FormsBindingComponent
     , SumarNumerosComponent
->>>>>>> 56c40987d30c231edd298b1192d1b4ef195c8929
+    ,TablaMultiplicarComponent
+  
+
   ],
-  imports: [BrowserModule, FormsModule],
-  providers: [provideBrowserGlobalErrorListeners()],
-  bootstrap: [App],
+  imports: [
+    BrowserModule, FormsModule
+  ],
+  providers: [
+    provideBrowserGlobalErrorListeners(),
+  ],
+  bootstrap: [App]
 })
-export class AppModule {}
+export class AppModule { }
