@@ -6,19 +6,22 @@ import { HooksComponent } from '../components/hookscomponent/hooks.component';
 import { DeportesComponent } from '../components/deportescomponent/deportes.component';
 import { FormsModule } from '@angular/forms';
 import { FormsBindingComponent } from '../components/formsbindingcomponent/forms.binding.component';
+import { SumarNumerosComponent } from '../components/sumarnumeroscomponent/sumar.numeros.component';
+import { Prueba } from './components/prueba/prueba';
+import { PruebaComponent } from './components/prueba-component/prueba-component';
 @NgModule({
   declarations: [
-    App, PrimerComponent
-    , HooksComponent
-    , DeportesComponent
-    , FormsBindingComponent
+    App,
+    PrimerComponent,
+    HooksComponent,
+    DeportesComponent,
+    FormsBindingComponent,
+    SumarNumerosComponent,
+    Prueba,
+    PruebaComponent,
   ],
-  imports: [
-    BrowserModule, FormsModule
-  ],
-  providers: [
-    provideBrowserGlobalErrorListeners(),
-  ],
-  bootstrap: [App]
+  imports: [BrowserModule, FormsModule],
+  providers: [provideBrowserGlobalErrorListeners()],
+  bootstrap: [App],
 })
-export class AppModule { }
+export class AppModule {}
