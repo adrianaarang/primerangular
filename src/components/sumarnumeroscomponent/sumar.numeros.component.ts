@@ -13,10 +13,6 @@ export class SumarNumerosComponent {
 
     constructor() {
         this.suma = 0;
-        //Para inicializar/instanciar los ElementRef, debemos indicar
-        //new ElementRef(VALOR)
-        this.cajaNumero1 = new ElementRef(0);
-        this.cajaNumero2 = new ElementRef(0);
     }
 
     sumarNumeros(): void {
