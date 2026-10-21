@@ -7,20 +7,20 @@ import { DeportesComponent } from '../components/deportescomponent/deportes.comp
 import { FormsModule } from '@angular/forms';
 import { FormsBindingComponent } from '../components/formsbindingcomponent/forms.binding.component';
 import { SumarNumerosComponent } from '../components/sumarnumeroscomponent/sumar.numeros.component';
+import { TestComponent } from '../components/test-component/test-component';
+
 @NgModule({
   declarations: [
-    App, PrimerComponent
-    , HooksComponent
-    , DeportesComponent
-    , FormsBindingComponent
-    , SumarNumerosComponent
+    App,
+    PrimerComponent,
+    HooksComponent,
+    DeportesComponent,
+    FormsBindingComponent,
+    SumarNumerosComponent,
+    TestComponent
   ],
-  imports: [
-    BrowserModule, FormsModule
-  ],
-  providers: [
-    provideBrowserGlobalErrorListeners(),
-  ],
-  bootstrap: [App]
+  imports: [BrowserModule, FormsModule],
+  providers: [provideBrowserGlobalErrorListeners()],
+  bootstrap: [App],
 })
-export class AppModule { }
+export class AppModule {}
