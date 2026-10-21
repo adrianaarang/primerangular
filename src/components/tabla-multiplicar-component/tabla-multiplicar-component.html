@@ -1,0 +1,38 @@
+<h1>Tabla multiplicar</h1>
+<form #tablaform="ngForm">
+    <label>Introduzca número</label>
+    <input type="number" #cajanumero/>
+    <button (click)="mostrarTabla()">
+        Mostrar tabla
+    </button>
+    <button (click)="generarElementos()">
+        Generar elementos
+    </button>    
+</form>
+<table border="1">
+    @for (elem of elementos; track elem){
+        <tr>
+            <td> {{ elem.operacion }}</td>
+            <td>{{ elem.resultado }}</td>
+        </tr>
+    }
+</table>
+<ul>
+    @for (algo of [].constructor(10); track $index){
+        <li>{{ numero * ($index + 1) }}</li>
+    }
+</ul>
+<table border="1">
+    @for (num of numeros; track num; let i = $index){
+        <tr>
+            <td> {{ numero }} * {{ i + 1 }}</td>
+            <td>{{num}}</td>
+        </tr>
+    }
+</table>
+<ul>
+    @for (num of numeros; track num){
+        <li>{{num}}</li>
+    }
+</ul>
+

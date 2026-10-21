@@ -1,1 +1,7 @@
 <p>test-component works!</p>
+<ul>
+    @for (item of [].constructor(10); track $index) {
+        <li>{{ $index + 1 }}</li>
+    }
+</ul>
+
